@@ -9,7 +9,7 @@ function App() {
       
       <div className="span1">
         <a href="/chennai" target="_blank" rel="nooneper" itemprop="item">
-        <span>Home /</span>
+        <span>Hom /</span>
         </a>
       <a href="/chennai" target="_blank" rel="nooneper" itemprop="item">
         <span> Chennai</span>
