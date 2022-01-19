@@ -1,0 +1,6 @@
+.transe img{
+    transition: all 1s ease;
+}
+.transe img:hover{
+    transform: scale(1.10);
+}

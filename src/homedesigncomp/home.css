@@ -1,0 +1,6 @@
+.navbarimage{
+     background-image:linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.8)), url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
+    height: 33rem;
+    background-size: cover;
+    
+}

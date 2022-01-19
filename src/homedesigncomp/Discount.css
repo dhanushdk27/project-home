@@ -1,0 +1,11 @@
+.imagediscount{
+
+    background-image: url("https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2049/t_high_res_template/images/growth/home-screen/1641569812728-a8517a.jpeg");
+    
+    background-size: contain;
+    height: 12.5rem;
+    background-repeat: no-repeat;
+    
+    margin-top: 3rem;
+    box-shadow: rgb(0 0 0 / 19%) 0px 4px 13px 4px;
+}
