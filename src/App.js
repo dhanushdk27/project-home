@@ -3,6 +3,14 @@ import './App.css';
 import Home from './homedesigncomp/home';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Details from './details/Details';
 
 function App() {
   const [locationfind, setlocationfind] = useState([]);
@@ -38,9 +46,21 @@ if(locationfind.length>0){ getmapdata();}
         getLocation();
     },[])
 return (
+  <Router>
     <div className='app1'>
-    <Home locationFromApp = {LocationObject}/>
+    <Switch>
+          <Route path="/home" exact>
+          <Home locationFromApp = {LocationObject}/>
+          </Route>
+
+          <Route path="/details/:id" exact>
+          <Details/>
+          </Route>
+        </Switch>
+        {locationfind}
+    
     </div>
+    </Router>
   );
 }
 

@@ -3,6 +3,7 @@ import { Col, Row } from "reactstrap";
 import { Avatar, Image } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 
 
@@ -55,8 +56,10 @@ function Categories() {
                     {categorieswithoutDups.map((e) => (
 
                         <Col style={{ height: "fit-content" }} lg={2}>
+                            <Link to={`/details/${e}`}>
                             <Avatar size={50} src={icons[e]} />
                             <p>{e}</p>
+                            </Link>
                         </Col>
 
                     ))}
